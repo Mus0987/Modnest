@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -22,7 +22,7 @@
         </span>
         <ul class="nav-links">
           <li><a href="/shop.html">Product</a></li>
-          <li><a href="/about.html">About</a></li>
+          <li><a href="/index.html">Home</a></li>
         </ul>
         <h2 class="logo">Modenest <span>House</span></h2>
         <div class="cart-btn">
@@ -35,42 +35,31 @@
     </nav>
     <!-- End navbar -->
 
-    <!-- start product  -->
-    <section class="shop">
-      <h2 class="shop-title">Home / <span>Product</span></h2>
-      <div class="shop-container">
-        <div class="sidebar">
-          <h3 class="sidebar-filter">select filter</h3>
-          <form>
-            <input
-              type="text"
-              name="search"
-              id="search-item"
-              placeholder="Search..."
-              onkeyup="search()"
-            />
-          </form>
-          <h4>Company</h4>
-          <article class="companies">
-            <button class="company-btn">all</button>
-            <button class="company-btn">ikea</button>
-            <button class="company-btn">marcos</button>
-            <button class="company-btn">caressa</button>
-            <button class="company-btn">liddy</button>
-          </article>
-          <h4>Price</h4>
-          <form class="price-form">
-            <input type="range" class="price-filter" min="0" max="50" />
-            <p class="price-value">Value : $ 80</p>
-          </form>
-        </div>
-
-        <section class="products">
-          <div class="product-center"></div>
-        </section>
+    <!-- About start -->
+    <div class="about">
+      <h2 class="shop-title">Home / <span>About</span></h2>
+      <div class="about-container">
+        <p>
+          <q
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            soluta molestiae possimus hic tenetur facilis consequuntur
+            exercitationem omnis. Optio nemo doloremque veniam, libero, magnam
+            neque consectetur officiis quis consequuntur excepturi labore ullam
+            deserunt a exercitationem aliquam delectus qui porro deleniti,
+            voluptas ducimus cum assumenda. Quasi unde inventore voluptatem vel
+            qui esse vero amet pariatur magnam itaque. Laborum error voluptatem
+            molestiae deleniti est cupiditate optio incidunt quia cumque
+            corrupti quasi expedita, vitae ab esse molestias eligendi! Quis id
+            doloribus iusto rem. Eaque, numquam repudiandae! A exercitationem
+            labore laborum ipsam alias! Porro impedit nam neque iste quas dolore
+            amet commodi a laborum.</q
+          >
+        </p>
       </div>
-    </section>
-    <!-- end product -->
+    </div>
+    <!-- About end -->
+
+    <!-- cart -->
     <div class="cart-overlay">
       <div class="cart">
         <span class="close-cart">
@@ -99,7 +88,8 @@
         </div>
       </div>
     </div>
-    <!-- end product -->
+    <!-- card end -->
+
     <script src="script.js"></script>
   </body>
 </html>

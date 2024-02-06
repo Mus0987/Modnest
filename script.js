@@ -50,6 +50,10 @@ class UI {
    <article class="product">
   <div class="img-container">
     <img src= ${product.image} alt="" class="product-img" />
+    <button class="seach-btn" data-id="1">
+    <i class="fas fa-search"></i>
+    search
+  </button>
     <button class="bag-btn" data-id=${product.id}>
       <i class="fas fa-shopping-cart"></i>
       add to bag
@@ -250,3 +254,25 @@ document.addEventListener("DOMContentLoaded", () => {
       ui.cartLogic()
     });
 });
+
+
+//SEARCH ENGINE
+
+ function search(){
+  const searchBox = document.getElementById('search-item').ariaValueMax.toUpperCase();
+  const productList = document.querySelectorAll('.product');
+  const pname = document.getElementsByTagName('h4')
+
+  for(var i =0; i<pname.length; i++){
+  let match = productList[i].getElementsByTagName('h2')[0];
+  if(match){
+   let textValue= match.textContent || match.innerHTML
+
+   if(textValue.toUpperCase().indexOf(searchBox)>-1)
+   productList[i].style.display = "";
+  }
+  else{
+    productList[i].style.display = "none";
+  }
+  }
+}

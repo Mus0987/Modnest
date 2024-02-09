@@ -166,6 +166,15 @@ body {
     cursor: pointer;
 }
 
+.banner-btn a {
+    text-decoration: none;
+    color: var(--mainWhite);
+}
+
+.banner-btn a:hover {
+    color: var(--primaryColor);
+}
+
 .banner-btn:hover {
     color: var(--primaryColor);
     background-color: var(--mainWhite);

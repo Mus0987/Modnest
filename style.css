@@ -137,7 +137,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url("./images/hero-bcg.jpeg") center/cover;
+    background: url("./Images/hero-bcg.jpeg") center/cover;
 }
 
 .banner {
